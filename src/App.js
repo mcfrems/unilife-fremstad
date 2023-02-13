@@ -5,18 +5,18 @@ function App() {
 const [email,setEmail]=useState('')
 
 
-const handleSubmit=(e)=>{
-  e.preventDefault()
-  console.log(email)
-}
+// const handleSubmit=(e)=>{
+//   e.preventDefault()
+//   console.log(email)
+// }
 
   return (
     <div>
-       <form onSubmit={handleSubmit}>
+       {/* <form onSubmit={handleSubmit}>
         <input
           onChange={(e)=>setEmail(e.target.value)}
         />
-       </form>
+       </form> */}
     </div>
   );
 }
