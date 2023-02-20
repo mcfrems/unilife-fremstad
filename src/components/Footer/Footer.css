@@ -1,4 +1,23 @@
-.footer-container{
+.upper-footer-container{
+    height: 375px;
+    background-color:var(--blue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-left{
+    color:var(--white);
+    width: 440px;
+    line-height: 2;
+}
+
+.contact-right{
+    color:var(--white);
+    line-height: 2;
+}
+
+.sub-footer-container{
     color:var(--white);
     background-color:var(--black);
     height:var(--footer-height);
