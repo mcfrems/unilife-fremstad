@@ -1,4 +1,36 @@
-.homepage-container{
-    min-height: 90vh;
-    height: 1000px;
+.homepage-container {
+    /* min-height: 90vh; */
+}
+
+.homepage-container img {
+    height: 500px;
+    width: 450px;
+}
+
+.compare-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.compare-left-container {
+    width: 25%;
+    line-height: 2;
+}
+
+.compare-left-container h3 {
+    font-weight: 500;
+    font-size: 28px;
+}
+
+button {
+    background-color:var(--purple);
+    border: none;
+    color:var(--white);
+    width: 240px;
+    height: 48px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 10px;
 }
