@@ -1,0 +1,20 @@
+.banner-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner {
+    width: 100%;
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-container h1 {
+
+}
