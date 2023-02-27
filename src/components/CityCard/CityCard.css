@@ -1,0 +1,26 @@
+.city-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    opacity: .7;
+}
+
+.city-card-container h1 {
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 120px;
+}
+
+.city-card-container p {
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 10px;
+}

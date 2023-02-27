@@ -15,8 +15,11 @@ function CityCard({city}) {
     }   
 
   return (
-    <div style={imageStyle}>
-        <p>{city.name}</p>
+    <div className="city-card-container">
+        <div style={imageStyle}>
+            <h1>{city.name}</h1>
+            <p>6 Properties</p>
+        </div>
     </div>
   )
 }
