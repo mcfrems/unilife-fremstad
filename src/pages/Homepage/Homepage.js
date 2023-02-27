@@ -4,6 +4,7 @@ import { AiOutlineHeart, AiOutlineMail } from "react-icons/ai";
 import person from '../../assets/person.png'
 import Headline from '../../components/Headline/Headline';
 import Search from '../../components/Search/Search';
+import TopCities from '../../components/TopCities/TopCities';
 
 
 function Homepage() {
@@ -14,9 +15,12 @@ function Homepage() {
         <Headline headline="Find student homes with bills included" subheadline="A simple and faster way to search for student accommodation"/>
       </div>
       <Search />
+      <TopCities />
       <div className="homepage-container">
         <div className="inclusive-homes-container">
-            
+          <div className="inclusive-homes-container-text">
+            <h3>Compare all inclusive student homes.</h3>
+          </div>
         </div>
           <div className="compare-container">
             <div className="compare-left-container">
