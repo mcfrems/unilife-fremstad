@@ -5,6 +5,10 @@ import person from '../../assets/person.png'
 import Headline from '../../components/Headline/Headline';
 import Search from '../../components/Search/Search';
 import TopCities from '../../components/TopCities/TopCities';
+import bill from '../../assets/bill.png';
+import compare from '../../assets/compare.png';
+import search from '../../assets/search.png'
+
 
 
 function Homepage() {
@@ -21,18 +25,21 @@ function Homepage() {
 
         <div className="inclusive-homes-container">
                 <div className="inclusive-homes-container-headline">
-                      <h3>Compare all inclusive student homes.</h3>
+                      <h2>Compare all inclusive student homes.</h2>
                 </div>
                 <div className="inclusive-homes-container-content">
                       <div className="inclusive-homes-container-search">
+                        <img src={search} />
                         <h2>Search</h2>
                         <p>Find your dream home in the perfect area near your university.</p>
                       </div>
                       <div className="inclusive-homes-container-compare">
+                        <img src={compare}/>
                         <h2>Compare</h2>
                         <p>Compare student accommodation to find the right home for you.</p>
                       </div>
                       <div className="inclusive-homes-container-bills">
+                        <img src={bill}/>
                         <h2>Bills Included</h2>
                         <p>Bills are included in all rent prices. No hidden fees.</p>
                       </div>

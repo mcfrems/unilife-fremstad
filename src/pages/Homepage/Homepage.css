@@ -42,11 +42,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 60px;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .inclusive-homes-container-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -58,6 +61,13 @@
     flex-wrap: wrap;
     text-align: center;
     width: 25%;
+    line-height: 2;
+}
+
+.inclusive-homes-container-search img {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 20px;
 }
 
 .inclusive-homes-container-compare {
@@ -68,6 +78,14 @@
     flex-wrap: wrap;
     text-align: center;
     width: 25%;
+    line-height: 2;
+
+}
+
+.inclusive-homes-container-compare img {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 20px;
 }
 
 .inclusive-homes-container-bills {
@@ -78,6 +96,13 @@
     flex-wrap: wrap;
     text-align: center;
     width: 25%;
+    line-height: 2;
+}
+
+.inclusive-homes-container-bills img {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 20px;
 }
 
 button {
