@@ -1,6 +1,7 @@
 import React from 'react'
 import "./TopCities.css"
 import axios from 'axios'
+import CityCard from '../CityCard/CityCard';
 
 function TopCities() {
     
@@ -18,7 +19,7 @@ function TopCities() {
             .then(res =>{
                 console.log(res.data.response)
                 //store data in state
-                setTopMovies(res.data.response)
+                setTopMovies(res.data.response.slice(0, 9))
             })
             .catch(err => console.log(err))
         },[]
@@ -32,7 +33,9 @@ function TopCities() {
         </div>
         <div className="top-cities-container">
                 {
-                topCities.map(item => <p>{item.name}</p>)
+                topCities.map(item => <CityCard 
+                    key={item._id}
+                    city={item}/>)
                 }
         </div>
         
