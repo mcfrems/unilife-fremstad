@@ -17,11 +17,29 @@ function Homepage() {
       <Search />
       <TopCities />
       <div className="homepage-container">
+
+
         <div className="inclusive-homes-container">
-          <div className="inclusive-homes-container-text">
-            <h3>Compare all inclusive student homes.</h3>
-          </div>
+                <div className="inclusive-homes-container-headline">
+                      <h3>Compare all inclusive student homes.</h3>
+                </div>
+                <div className="inclusive-homes-container-content">
+                      <div className="inclusive-homes-container-search">
+                        <h2>Search</h2>
+                        <p>Find your dream home in the perfect area near your university.</p>
+                      </div>
+                      <div className="inclusive-homes-container-compare">
+                        <h2>Compare</h2>
+                        <p>Compare student accommodation to find the right home for you.</p>
+                      </div>
+                      <div className="inclusive-homes-container-bills">
+                        <h2>Bills Included</h2>
+                        <p>Bills are included in all rent prices. No hidden fees.</p>
+                      </div>
+                </div>
         </div>
+
+
           <div className="compare-container">
             <div className="compare-left-container">
                 <AiOutlineHeart />
