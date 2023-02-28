@@ -18,7 +18,7 @@ function CityCard({city}) {
     <div className="city-card-container">
         <div style={imageStyle}>
             <h1>{city.name}</h1>
-            <p>6 Properties</p>
+            <p>{city.property_count} Properties</p>
         </div>
     </div>
   )

@@ -15,11 +15,10 @@ function Homepage() {
 
   return (
     <div>
-      <div>
-        <Headline headline="Find student homes with bills included" subheadline="A simple and faster way to search for student accommodation"/>
-      </div>
+      <Headline headline="Find student homes with bills included" subheadline="A simple and faster way to search for student accommodation"/>
       <Search />
       <TopCities />
+      <button>See All Cities</button>
       <div className="homepage-container">
 
 

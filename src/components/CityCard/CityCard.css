@@ -9,8 +9,9 @@
 
 .city-card-container h1 {
     color: #FFF;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
     font-weight: 600;
     font-size: 30px;
     margin-top: 120px;
@@ -18,8 +19,9 @@
 
 .city-card-container p {
     color: #FFF;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
     font-weight: 400;
     font-size: 20px;
     margin-top: 10px;
