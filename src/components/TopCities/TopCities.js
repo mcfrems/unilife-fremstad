@@ -10,7 +10,7 @@ function TopCities() {
     //Url = ${baseUrl}cities
 
     //create state to hold top cities
-    const [topCities, setTopMovies] = React.useState([])
+    const [topCities, setTopCities] = React.useState([])
 
     React.useEffect(
         ()=>{
@@ -19,7 +19,7 @@ function TopCities() {
             .then(res =>{
                 console.log(res.data.response)
                 //store data in state
-                setTopMovies(res.data.response.slice(0, 9))
+                setTopCities(res.data.response.slice(0, 9))
             })
             .catch(err => console.log(err))
         },[]

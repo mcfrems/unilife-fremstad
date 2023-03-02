@@ -8,19 +8,20 @@ import TopCities from '../../components/TopCities/TopCities';
 import bill from '../../assets/bill.png';
 import compare from '../../assets/compare.png';
 import search from '../../assets/search.png'
+import {Link} from 'react-router-dom'
 
 
 
 function Homepage() {
 
   return (
-    <div>
+    <div className="homepage-container">
       <Headline headline="Find student homes with bills included" subheadline="A simple and faster way to search for student accommodation"/>
       <Search />
       <TopCities />
-      <button>See All Cities</button>
-      <div className="homepage-container">
-
+      <Link to= "/seeallcities">
+        <button>See All Cities</button>
+      </Link>
 
         <div className="inclusive-homes-container">
                 <div className="inclusive-homes-container-headline">
@@ -45,7 +46,6 @@ function Homepage() {
                 </div>
         </div>
 
-
           <div className="compare-container">
             <div className="compare-left-container">
                 <AiOutlineHeart />
@@ -58,7 +58,6 @@ function Homepage() {
             </div>
             <img src={person} className="person"/>
           </div>
-      </div>
     </div>
   )
 }

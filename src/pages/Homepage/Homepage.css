@@ -6,10 +6,10 @@
     flex-direction: column;
 }
 
-.homepage-container img {
+/* .homepage-container img {
     height: 500px;
     width: 450px;
-}
+} */
 
 .compare-container {
     display: flex;
@@ -109,6 +109,7 @@ button {
     background-color:var(--purple);
     border: none;
     color:var(--white);
+    text-align: center;
     width: 240px;
     height: 48px;
     border-radius: 12px;
