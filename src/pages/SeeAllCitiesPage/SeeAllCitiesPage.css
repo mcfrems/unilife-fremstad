@@ -1,0 +1,14 @@
+.see-all-cities-headline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 30px 0;
+}
+
+.see-all-cities-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}

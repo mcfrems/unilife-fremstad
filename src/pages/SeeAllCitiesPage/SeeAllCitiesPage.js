@@ -12,16 +12,20 @@ function SeeAllCitiesPage() {
   //Url = ${baseUrl}cities
 
   //create state to hold top cities
-  const [topCities, setTopCities] = React.useState([])
+  const [allCities, setAllCities] = React.useState([])
+//   const [currentPage, setCurrentPage] = React.useState([])
+
 
   React.useEffect(
       ()=>{
           //call the api
-          axios.get(`${baseUrl}cities`)
+          axios.get(`${baseUrl}cities?limit=20`)
           .then(res =>{
-              console.log(res.data.response)
+            // console.log(res.data.currentPage)
+            console.log(res.data.response)
               //store data in state
-              setTopCities(res.data.response)
+            setAllCities(res.data.response)
+            //   setCurrentPage(res.data.currentPage)
           })
           .catch(err => console.log(err))
       },[]
@@ -31,12 +35,12 @@ function SeeAllCitiesPage() {
   return (
     <div>
         <Headline headline="Student Accomodation" subheadline="UniLife have student accommodation available across the UK. Whatever you’re after, we can help you find the right student accommodation for you. "/>
-        <div className="top-cities-headline">
+        <div className="see-all-cities-headline">
             <h3>Student accommodations in our top cities</h3>
         </div>
-        <div className="top-cities-container">
+        <div className="see-all-cities-container">
                 {
-                topCities.map(item => <CityCard 
+                allCities.map(item => <CityCard
                     key={item._id}
                     city={item}/>)
                 }
