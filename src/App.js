@@ -6,6 +6,7 @@ import Homepage from './pages/Homepage/Homepage';
 import Search from './components/Search/Search';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import SeeAllCitiesPage from './pages/SeeAllCitiesPage/SeeAllCitiesPage';
+import CitiesDetailsPage from './pages/CitiesDetailsPage/CitiesDetailsPage';
 
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
         <Routes >
           <Route path="/" element={<Homepage />}/>
           <Route path="/seeallcities" element={<SeeAllCitiesPage />}/>
+          <Route path="/citydetails" element={<CitiesDetailsPage />}/>
+
         </Routes>
         <Footer />
       </BrowserRouter>
