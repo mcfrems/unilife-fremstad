@@ -45,6 +45,7 @@ function SeeAllCitiesPage() {
                     city={item}/>)
                 }
         </div>
+
         
     </div>
   )

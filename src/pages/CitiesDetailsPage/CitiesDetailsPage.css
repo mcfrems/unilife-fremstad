@@ -1,14 +1,31 @@
-.cities-details-headline{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px 0 30px 0;
-}
-
 .cities-details-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 10px;
+}
+
+.cities-details-headline{
+    text-align: center;
+    margin: 40px 0 30px 0;
+}
+
+.city-details-text-container{
+    background-color:var(--grey);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 520px;
+    width: 1280px;
+    border-radius: 24px;
+    margin: 40px 0 100px 0;
+    line-height: 2;
+}
+
+.city-details-text-container-left{
+    width: 40%;
+}
+
+.city-details-text-container img{
+    border-radius: 24px;
 }
