@@ -1,15 +1,9 @@
-
 .homepage-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
-/* .homepage-container img {
-    height: 500px;
-    width: 450px;
-} */
 
 .compare-container {
     display: flex;
@@ -55,11 +49,6 @@
 }
 
 .inclusive-homes-container-search {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     text-align: center;
     width: 25%;
     line-height: 2;
@@ -72,11 +61,6 @@
 }
 
 .inclusive-homes-container-compare {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
     text-align: center;
     width: 25%;
     line-height: 2;
@@ -90,11 +74,6 @@
 }
 
 .inclusive-homes-container-bills {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
     text-align: center;
     width: 25%;
     line-height: 2;
@@ -108,7 +87,6 @@
 
 button {
     background-color:var(--purple);
-    border: none;
     color:var(--white);
     text-align: center;
     width: 240px;

@@ -36,13 +36,12 @@ function SeeAllCitiesPage() {
     <div>
         <Headline headline="Student Accomodation" subheadline="UniLife have student accommodation available across the UK. Whatever you’re after, we can help you find the right student accommodation for you. "/>
         <div className="see-all-cities-headline">
-            <h3>Student accommodations in our top cities</h3>
+            <h3>Search by city</h3>
         </div>
         <div className="see-all-cities-container">
                 {
-                allCities.map(item => <CityCard
-                    key={item._id}
-                    city={item}/>)
+                allCities.map(item => <button className="all-cities-btn">
+                   {item.name}</button>)
                 }
         </div>
 

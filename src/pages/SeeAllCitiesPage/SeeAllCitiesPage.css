@@ -12,3 +12,15 @@
     flex-wrap: wrap;
     margin: 10px;
 }
+
+.all-cities-btn {
+    margin: 10px;
+    background-color:var(--background-color);
+    color:var(--black);
+    border-color:var(--black);
+}
+
+.all-cities-btn:hover {
+    background-color:var(--purple);
+    color:var(--white);
+}
