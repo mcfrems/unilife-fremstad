@@ -9,7 +9,7 @@ function Homes() {
 
     const baseUrl = process.env.REACT_APP_BASE_URL;
     //what is the endpoint
-    //Url = ${baseUrl}cities
+    //Url = ${baseUrl}properties
 
     //create state to hold top cities
     const [homes, setHomes] = React.useState([])
@@ -17,11 +17,11 @@ function Homes() {
     React.useEffect(
         ()=>{
             //call the api
-            axios.get(`${baseUrl}cities`)
+            axios.get(`${baseUrl}properties`)
             .then(res =>{
-                console.log(res.data.response)
+                console.log(res.data)
                 //store data in state
-                setHomes(res.data.response)
+                setHomes(res.data)
             })
             .catch(err => console.log(err))
         },[]
@@ -31,12 +31,11 @@ function Homes() {
 
   return (
     <div className="homes-container">
-        <HomeCard />
-        {/* {
-        topCities.map(item => <HomeCard
+        {
+        homes.map(item => <HomeCard
             key={item._id}
             city={item}/>)
-        } */}
+        }
     </div>
   )
 }

@@ -3,6 +3,7 @@ import "./CitiesDetailsPage.css"
 import Headline from '../../components/Headline/Headline';
 import students from '../../assets/students.png'
 import Homes from '../../components/Homes/Homes';
+import Search from '../../components/Search/Search';
 
 
 
@@ -11,6 +12,7 @@ function CitiesDetailsPage() {
   return (
     <div className="cities-details-container">
         <Headline headline="Search Accomodation" subheadline="Whatever you’re after, we can help you find the right student accommodation for you.  "/>
+        <Search/>
         <div className="cities-details-body">
                 <h3>6 homes in Leeds</h3>
                 <Homes />
