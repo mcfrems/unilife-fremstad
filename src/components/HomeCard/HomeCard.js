@@ -1,7 +1,7 @@
 import React from 'react'
 import "./HomeCard.css"
 
-function HomeCard() {
+function HomeCard({home}) {
 
     const imageStyle={
         height: "300px",
@@ -16,8 +16,8 @@ function HomeCard() {
 
 
   return (
-    <div>HomeCard
-
+    <div>
+        <p>{home.city_id}</p>
     </div>
   )
 }

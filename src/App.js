@@ -7,6 +7,7 @@ import Search from './components/Search/Search';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import SeeAllCitiesPage from './pages/SeeAllCitiesPage/SeeAllCitiesPage';
 import CitiesDetailsPage from './pages/CitiesDetailsPage/CitiesDetailsPage';
+import HomeDetailsPage from './pages/HomeDetailsPage/HomeDetailsPage';
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
           <Route path="/" element={<Homepage />}/>
           <Route path="/seeallcities" element={<SeeAllCitiesPage />}/>
           <Route path="/citydetails" element={<CitiesDetailsPage />}/>
-
+          <Route path="/homedetails" element={<HomeDetailsPage />}/>
         </Routes>
         <Footer />
       </BrowserRouter>

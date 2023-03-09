@@ -27,14 +27,12 @@ function Homes() {
         },[]
     )
 
-
-
   return (
     <div className="homes-container">
         {
         homes.map(item => <HomeCard
             key={item._id}
-            city={item}/>)
+            home={item}/>)
         }
     </div>
   )
