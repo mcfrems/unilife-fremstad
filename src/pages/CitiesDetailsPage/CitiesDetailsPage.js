@@ -30,7 +30,7 @@ function CitiesDetailsPage() {
     ()=>{
       axios.get(`${baseUrl}cities/${cityId}`)
       .then(res => {
-          console.log(res.data.data[0])
+          //console.log(res.data.data[0])
           setCityText(res.data.data[0])
       })
       .catch(err => console.log(err))
@@ -43,16 +43,18 @@ function CitiesDetailsPage() {
         <Search/>
 
         <div className="cities-details-cards">
-                <h3>6 homes in {cityText?.name}</h3>
-                {/* <Homes /> */}
-            <div className="city-details-text-container">
-                <div className="city-details-text-container-left">
-                  <h3>Being a student in {cityText?.name}</h3>
-                  <p> {cityText?.universities} <br/> {cityText?.student_life} </p>
-                </div>
-                <img src={students} className="students"/>
-            </div>
+            <h3>6 homes in {cityText?.name}</h3>
+            <Homes />
         </div>
+        
+        <div className="city-details-text-container">
+            <div className="city-details-text-container-left">
+              <h3>Being a student in {cityText?.name}</h3>
+              <p> {cityText?.universities} <br/> {cityText?.student_life} </p>
+            </div>
+            <img src={students} className="students"/>
+        </div>
+
 
 
     </div>
