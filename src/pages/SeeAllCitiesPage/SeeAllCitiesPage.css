@@ -24,4 +24,5 @@
 .all-cities-btn:hover {
     background-color:var(--purple);
     color:var(--white);
+    cursor: pointer;
 }

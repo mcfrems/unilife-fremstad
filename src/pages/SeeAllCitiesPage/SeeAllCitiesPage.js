@@ -3,6 +3,7 @@ import axios from 'axios';
 import "./SeeAllCitiesPage.css"
 import CityCard from '../../components/CityCard/CityCard';
 import Headline from '../../components/Headline/Headline';
+import {Link} from 'react-router-dom'
 
 
 function SeeAllCitiesPage() {
@@ -40,8 +41,10 @@ function SeeAllCitiesPage() {
         </div>
         <div className="see-all-cities-container">
                 {
-                allCities.map(item => <button className="all-cities-btn">
-                   {item.name}</button>)
+                allCities.map(item => <Link to ={`/cities/${item?._id}`}> 
+                <button className="all-cities-btn">
+                {item.name}</button> 
+                </Link>)
                 }
         </div>
 
