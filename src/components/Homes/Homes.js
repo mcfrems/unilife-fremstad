@@ -38,7 +38,7 @@ function Homes() {
     <div className="homes-container">
         {
         homes.map(item => 
-             <HomeCard key={item._id} homes={item} imageUrl={item?.images[0]}/>)
+             <HomeCard key={item?._id} homes={item} imageUrl={item?.images[0]}/>)
         }
     </div>
   )
