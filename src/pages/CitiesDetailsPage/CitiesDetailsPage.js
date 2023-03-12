@@ -7,6 +7,7 @@ import Search from '../../components/Search/Search';
 import {useParams} from 'react-router-dom'
 import axios from 'axios';
 
+
 function CitiesDetailsPage() {
 
   const baseUrl = process.env.REACT_APP_BASE_URL;
@@ -34,7 +35,7 @@ function CitiesDetailsPage() {
           setCityText(res.data.data[0])
       })
       .catch(err => console.log(err))
-    }, []
+    }, [baseUrl, cityId]
   )
 
   return (
@@ -44,9 +45,9 @@ function CitiesDetailsPage() {
 
         <div className="cities-details-cards">
             <h3>6 homes in {cityText?.name}</h3>
-            <Homes />
+            <Homes/>
         </div>
-        
+
         <div className="city-details-text-container">
             <div className="city-details-text-container-left">
               <h3>Being a student in {cityText?.name}</h3>

@@ -1,23 +1,30 @@
 import React from 'react'
 import "./HomeCard.css"
 
-function HomeCard({home}) {
 
-    const imageStyle={
-        height: "300px",
-        width: "400px",
-        // backgroundImage: `url("${city?.image_url}")`,
+
+function HomeCard({homes, imageUrl}) {
+
+  const baseUrl = process.env.REACT_APP_BASE_URL;
+
+    const homeCardStyle={
+        height: "450px",
+        width: "275px",
+        backgroundImage: `url("${homes}${imageUrl}")` ,
         borderRadius: "24px",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
+        border: "1px solid grey",
+        margin: "10px",
         position: "relative", //needed to use absolute on other stuff
     }   
 
 
   return (
     <div>
-        <p>{home.city_id}</p>
+        <div style={homeCardStyle}></div>
+        {/* <p>{homes.city_id}</p> */}
     </div>
   )
 }

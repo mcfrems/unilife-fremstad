@@ -6,6 +6,12 @@
     margin: 10px;
 }
 
+.homes-card{
+    background-color: blue;
+    width: 400px;
+    height: 500px;
+}
+
 .homes-container img{
     display: flex;
     justify-content: center;

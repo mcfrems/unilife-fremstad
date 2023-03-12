@@ -25,9 +25,10 @@ function Homes() {
             //call the api
             axios.get(`${baseUrl}properties/city/${cityId}`)
             .then(res =>{
-                console.log(res.data.response)
+                //console.log(res.data.response)
                 //store data in state
                 setHomes(res.data.response)
+                console.log(res.data.response)
             })
             .catch(err => console.log(err))
         },[]
@@ -36,7 +37,8 @@ function Homes() {
   return (
     <div className="homes-container">
         {
-        homes.map(item => <img src={item?.images[0]}/>)
+        homes.map(item => 
+             <HomeCard key={item._id} homes={item} imageUrl={item?.images[0]}/>)
         }
     </div>
   )
