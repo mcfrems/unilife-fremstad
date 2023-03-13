@@ -12,12 +12,3 @@
     height: 500px;
 }
 
-.homes-container img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 10px;
-    width: 400px;
-    height: 260px;
-}

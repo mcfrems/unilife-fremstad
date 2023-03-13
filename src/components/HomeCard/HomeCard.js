@@ -1,21 +1,21 @@
 import React from 'react'
 import "./HomeCard.css"
+import { Link } from 'react-router-dom';
 
 
-
-function HomeCard({homes, imageUrl}) {
+function HomeCard({homes}) {
 
   const baseUrl = process.env.REACT_APP_BASE_URL;
 
     const homeCardStyle={
-        height: "450px",
+        height: "400px",
         width: "275px",
-        backgroundImage: `url("${homes}${imageUrl}")` ,
+        // backgroundImage: `url("${homes}${imageUrl}")` ,
         borderRadius: "24px",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        border: "1px solid grey",
+        border: "1px solid var(--grey)",
         margin: "10px",
         position: "relative", //needed to use absolute on other stuff
     }   
@@ -23,9 +23,34 @@ function HomeCard({homes, imageUrl}) {
 
   return (
     <div>
-        <div style={homeCardStyle}></div>
-        {/* <p>{homes.city_id}</p> */}
+        <div style={homeCardStyle}>
+          <img className= "home-card-img" src={homes?.images[0]}/>
+
+          <div className="rent-container">
+            <div className="rent-container-left">
+              <h3>{homes?.rent}</h3>
+            </div>
+            <div className="rent-container-right">
+              <p>{homes?.bedroom_count}</p>
+              <p>{homes?.bathroom_count}</p>
+            </div>
+          </div>
+
+          <div className="address-container">
+            <div className="address-container-top">
+              <p>Detatched</p>
+              <p>{homes?.furnished}</p>
+            </div>
+            <div className="address-container-bottom">
+              <p>{homes?.address.street} {homes?.address.city} {homes?.address.postcode}</p>
+            </div>
+          </div>
+          <div className="view-home-container">
+            <Link to="/properties/:propertyId"><p>View Home</p></Link>
+          </div>
+        </div>
     </div>
+
   )
 }
 

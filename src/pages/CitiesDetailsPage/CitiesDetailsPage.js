@@ -44,7 +44,7 @@ function CitiesDetailsPage() {
         <Search/>
 
         <div className="cities-details-cards">
-            <h3>6 homes in {cityText?.name}</h3>
+            <h3 className="cities-details-cards-headline">6 homes in {cityText?.name}</h3>
             <Homes/>
         </div>
 
