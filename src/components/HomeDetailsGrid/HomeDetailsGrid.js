@@ -2,6 +2,8 @@ import React from 'react'
 import "./HomeDetailsGrid.css"
 import axios from 'axios'
 import {useParams} from 'react-router-dom'
+import HomeFeatures from '../HomeFeatures/HomeFeatures';
+// import HomeDetailsImages from '../HomeDetailsImages/HomeDetailsImages';
 
 
 function HomeDetailsGrid() {
@@ -15,6 +17,7 @@ function HomeDetailsGrid() {
 
     //create state to hold top cities
     const [homeDetails, setHomeDetails] = React.useState([])
+    // const [homeDetailsImages, setHomeDetailsImages] = React.useState([])
 
     React.useEffect(
         ()=>{
@@ -24,6 +27,7 @@ function HomeDetailsGrid() {
                // console.log(res.data)
                 //store data in state
                 setHomeDetails(res.data)
+                // setHomeDetailsImages(res.data.images)
             })
             .catch(err => console.log(err))
         },[]
@@ -36,10 +40,24 @@ function HomeDetailsGrid() {
   return (
     <div className="grid-container">
 
-          <div className="grid-item">1
+          <div className="grid-item">
+            <small>Back to Search</small>
+            <div className="large-image-container">
+                <img src={homeDetails?.images?.[0]} />
+            </div>
+            <div className="small-image-container">
+                <img src={homeDetails?.images?.[1]} />
+                <img src={homeDetails?.images?.[2]} />
+                <img src={homeDetails?.images?.[3]} />
+            </div>
+        {/* {
+            homeDetailsImages.map(item => 
+             <HomeDetailsImages image={item} />)
+            } */}
           </div>
 
-          <div className="grid-item">2
+          <div className="grid-item">
+            <HomeFeatures />
           </div>
 
           <div className="grid-item">
