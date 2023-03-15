@@ -21,12 +21,17 @@ function HomeDetailsGrid() {
             //call the api
             axios.get(`${baseUrl}properties/${propertyId}`)
             .then(res =>{
-                console.log(res)
+               // console.log(res.data)
                 //store data in state
+                setHomeDetails(res.data)
             })
             .catch(err => console.log(err))
         },[]
     )
+
+    const test = () => {
+      console.log("property id is ", propertyId)
+    }
 
   return (
     <div className="grid-container">
@@ -39,6 +44,7 @@ function HomeDetailsGrid() {
 
           <div className="grid-item">
             <h3>Description</h3>
+            <p>{homeDetails?.property_description}</p>
           </div>
 
           <div className="grid-item">
@@ -47,6 +53,11 @@ function HomeDetailsGrid() {
 
           <div className="grid-item">
             <h3>Key Features</h3>
+            <p>{homeDetails?.key_features?.[0]}</p>
+            <p>{homeDetails?.key_features?.[1]}</p>
+            <p>{homeDetails?.key_features?.[2]}</p>
+            <p>{homeDetails?.key_features?.[3]}</p>
+            <p>{homeDetails?.key_features?.[4]}</p>
           </div>
 
     </div>

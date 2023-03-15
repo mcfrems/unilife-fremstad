@@ -46,7 +46,7 @@ function HomeCard({homes}) {
             </div>
           </div>
           <div className="view-home-container">
-            <Link to="/properties/:propertyId"><p>View Home</p></Link>
+            <Link to={`/properties/${homes?._id}`}><p>View Home</p></Link>
           </div>
         </div>
     </div>
