@@ -57,7 +57,9 @@ function HomeDetailsGrid() {
           </div>
 
           <div className="grid-item">
-            <HomeFeatures />
+            <HomeFeatures item={homeDetails}/>
+            <button>Shortlist</button>
+            <button>Book Viewing</button>
           </div>
 
           <div className="grid-item">
@@ -71,10 +73,10 @@ function HomeDetailsGrid() {
 
           <div className="grid-item">
             <h3>Key Features</h3>
-            <p>{homeDetails?.key_features?.[0]}</p>
-            <p>{homeDetails?.key_features?.[1]}</p>
-            <p>{homeDetails?.key_features?.[2]}</p>
-            <p>{homeDetails?.key_features?.[3]}</p>
+            <p>{homeDetails?.key_features?.[0]}</p><br/>
+            <p>{homeDetails?.key_features?.[1]}</p><br/>
+            <p>{homeDetails?.key_features?.[2]}</p><br/>
+            <p>{homeDetails?.key_features?.[3]}</p><br/>
             <p>{homeDetails?.key_features?.[4]}</p>
           </div>
 
