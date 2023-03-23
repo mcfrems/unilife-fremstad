@@ -30,7 +30,8 @@ function HomeDetailsGrid() {
                 // setHomeDetailsImages(res.data.images)
             })
             .catch(err => console.log(err))
-        }
+            //eslint-disable-next-line
+        }, []
     )
 
 

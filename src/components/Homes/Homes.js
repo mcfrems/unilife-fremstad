@@ -31,7 +31,8 @@ function Homes() {
                 console.log(res.data.response)
             })
             .catch(err => console.log(err))
-        }
+            //eslint-disable-next-line
+        }, []
     )
 
   return (

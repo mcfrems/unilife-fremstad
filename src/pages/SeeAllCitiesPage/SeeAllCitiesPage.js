@@ -28,7 +28,8 @@ function SeeAllCitiesPage() {
             //   setCurrentPage(res.data.currentPage)
           })
           .catch(err => console.log(err))
-      }
+          //eslint-disable-next-line
+      }, []
   )
 
 

@@ -35,7 +35,8 @@ function CitiesDetailsPage() {
           setCityText(res.data.data[0])
       })
       .catch(err => console.log(err))
-    }, [baseUrl, cityId]
+        //eslint-disable-next-line
+    }, []
   )
 
   return (
