@@ -30,12 +30,9 @@ function HomeDetailsGrid() {
                 // setHomeDetailsImages(res.data.images)
             })
             .catch(err => console.log(err))
-        },[]
+        }
     )
 
-    const test = () => {
-      console.log("property id is ", propertyId)
-    }
 
   return (
     <div className="grid-container">
@@ -43,12 +40,12 @@ function HomeDetailsGrid() {
           <div className="grid-item">
             <small>Back to Search</small>
             <div className="large-image-container">
-                <img src={homeDetails?.images?.[0]} />
+                <img src={homeDetails?.images?.[0]} alt=""/>
             </div>
             <div className="small-image-container">
-                <img src={homeDetails?.images?.[1]} />
-                <img src={homeDetails?.images?.[2]} />
-                <img src={homeDetails?.images?.[3]} />
+                <img src={homeDetails?.images?.[1]} alt=""/>
+                <img src={homeDetails?.images?.[2]} alt=""/>
+                <img src={homeDetails?.images?.[3]} alt=""/>
             </div>
         {/* {
             homeDetailsImages.map(item => 

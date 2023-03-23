@@ -1,9 +1,8 @@
-import React,{useState} from 'react';
+import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Homepage from './pages/Homepage/Homepage';
-import Search from './components/Search/Search';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import SeeAllCitiesPage from './pages/SeeAllCitiesPage/SeeAllCitiesPage';
 import CitiesDetailsPage from './pages/CitiesDetailsPage/CitiesDetailsPage';

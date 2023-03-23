@@ -5,12 +5,9 @@ import { Link } from 'react-router-dom';
 
 function HomeCard({homes}) {
 
-  const baseUrl = process.env.REACT_APP_BASE_URL;
-
     const homeCardStyle={
         height: "400px",
         width: "275px",
-        // backgroundImage: `url("${homes}${imageUrl}")` ,
         borderRadius: "24px",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
@@ -24,7 +21,7 @@ function HomeCard({homes}) {
   return (
     <div>
         <div style={homeCardStyle}>
-          <img className= "home-card-img" src={homes?.images[0]}/>
+          <img className= "home-card-img" src={homes?.images[0]} alt=""/>
 
           <div className="rent-container">
             <div className="rent-container-left">

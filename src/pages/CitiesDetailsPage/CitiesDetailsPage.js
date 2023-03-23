@@ -53,7 +53,7 @@ function CitiesDetailsPage() {
               <h3>Being a student in {cityText?.name}</h3>
               <p> {cityText?.universities} <br/> {cityText?.student_life} </p>
             </div>
-            <img src={students} className="students"/>
+            <img src={students} className="students" alt=""/>
         </div>
 
 

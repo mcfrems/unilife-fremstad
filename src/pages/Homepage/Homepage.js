@@ -29,17 +29,17 @@ function Homepage() {
                 </div>
                 <div className="inclusive-homes-container-content">
                       <div className="inclusive-homes-container-search">
-                        <img src={search} />
+                        <img src={search} alt=""/>
                         <h2>Search</h2>
                         <p>Find your dream home in the perfect area near your university.</p>
                       </div>
                       <div className="inclusive-homes-container-compare">
-                        <img src={compare}/>
+                        <img src={compare} alt=""/>
                         <h2>Compare</h2>
                         <p>Compare student accommodation to find the right home for you.</p>
                       </div>
                       <div className="inclusive-homes-container-bills">
-                        <img src={bill}/>
+                        <img src={bill} alt=""/>
                         <h2>Bills Included</h2>
                         <p>Bills are included in all rent prices. No hidden fees.</p>
                       </div>
@@ -56,7 +56,7 @@ function Homepage() {
                 <p>Shortlist your favourite properties and send enquiries in one click.</p>
                 <button>Search & Compare</button>
             </div>
-            <img src={person} className="person"/>
+            <img src={person} className="person" alt=""/>
           </div>
     </div>
   )

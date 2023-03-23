@@ -21,9 +21,9 @@ function Footer() {
       </div>
       <div className="sub-footer-container">
         <div className="footer-left-container">
-          <a href="">About Us</a>
-          <a href="">Terms & Conditions</a>
-          <a href="">Privacy & Cookie Policies</a>
+          <a href="/">About Us</a>
+          <a href="/">Terms & Conditions</a>
+          <a href="/">Privacy & Cookie Policies</a>
         </div> 
         <div className="footer-right-container">
           <p>2023</p>

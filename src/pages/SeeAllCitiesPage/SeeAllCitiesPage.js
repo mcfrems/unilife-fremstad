@@ -1,7 +1,6 @@
 import React from 'react'
 import axios from 'axios';
 import "./SeeAllCitiesPage.css"
-import CityCard from '../../components/CityCard/CityCard';
 import Headline from '../../components/Headline/Headline';
 import {Link} from 'react-router-dom'
 
@@ -29,7 +28,7 @@ function SeeAllCitiesPage() {
             //   setCurrentPage(res.data.currentPage)
           })
           .catch(err => console.log(err))
-      },[]
+      }
   )
 
 

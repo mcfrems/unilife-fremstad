@@ -31,7 +31,7 @@ function Homes() {
                 console.log(res.data.response)
             })
             .catch(err => console.log(err))
-        },[]
+        }
     )
 
   return (

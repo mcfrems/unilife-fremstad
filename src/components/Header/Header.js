@@ -14,11 +14,11 @@ function Header() {
         <div className="header-buttons-container">
             <div className="shortlist-container">
                 <AiOutlineHeart />
-                <a href="">Shortlist</a>
+                <a href="/">Shortlist</a>
             </div>
             <div className="contact-container">
                 <AiOutlineMail />
-                <a href="">Contact Us</a>
+                <a href="/">Contact Us</a>
             </div>
         </div>
     </div>

@@ -22,7 +22,7 @@ function TopCities() {
                 setTopCities(res.data.response.slice(0, 9))
             })
             .catch(err => console.log(err))
-        },[]
+        }
     )
 
 
