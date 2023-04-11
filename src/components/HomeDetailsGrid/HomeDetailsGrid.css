@@ -24,3 +24,20 @@
     margin: 5px;
     border-radius: 12px;
   }
+
+  .bedroom-prices-container {
+    width: 600px;
+    height: 275px;
+    border: 1px solid var(--grey);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .bedroom-prices {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 30px 15px 30px;
+    /* border-bottom: 1px solid var(--grey); */
+  }

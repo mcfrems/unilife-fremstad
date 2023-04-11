@@ -24,7 +24,7 @@ function HomeDetailsGrid() {
             //call the api
             axios.get(`${baseUrl}properties/${propertyId}`)
             .then(res =>{
-               // console.log(res.data)
+               console.log(res.data)
                 //store data in state
                 setHomeDetails(res.data)
                 // setHomeDetailsImages(res.data.images)
@@ -34,6 +34,12 @@ function HomeDetailsGrid() {
         }, []
     )
 
+ 
+  // console.log(Object.values(homeDetails?.bedroom_prices));
+  console.log(homeDetails?.bedroom_prices);
+  function bedroom() {
+    return homeDetails?.bedroom_prices;
+  }
 
   return (
     <div className="grid-container">
@@ -51,7 +57,7 @@ function HomeDetailsGrid() {
         {/* {
             homeDetailsImages.map(item => 
              <HomeDetailsImages image={item} />)
-            } */}
+        } */}
           </div>
 
           <div className="grid-item">
@@ -67,6 +73,31 @@ function HomeDetailsGrid() {
 
           <div className="grid-item">
             <h3>Bedroom Prices</h3>
+            <div className="bedroom-prices-container">
+                <div className="bedroom-prices">
+
+                  <p>
+                  {
+                  Object.values(bedroom)
+                  }
+                  </p>
+
+                  <p>Bedroom 1</p>
+                  <p>Moneys</p>
+                </div>
+                <div className="bedroom-prices">
+                  <p>Bedroom 1</p>
+                  <p>Moneys</p>
+                </div>
+                <div className="bedroom-prices">
+                  <p>Bedroom 1</p>
+                  <p>Moneys</p>
+                </div>
+                <div className="bedroom-prices">
+                  <p>Bedroom 1</p>
+                  <p>Moneys</p>
+                </div>
+            </div>
           </div>
 
           <div className="grid-item">
